@@ -1,0 +1,6 @@
+ <h1>Liste des notes</h1>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }} {% if note > 10 %}(supérieure à 10){% else %}(inférieure ou égale à 10){% endif %}</li>
+        {% endfor %}
+    </ul>
